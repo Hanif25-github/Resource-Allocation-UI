@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Finder by Skills</title>
+    <link rel="stylesheet" href="./css/viewResource.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="search-wrapper">
+            <h1>Locate Resource By Skills</h1>
+            
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="skills-search" 
+                    placeholder="Search resources by skill (e.g., Java, Python)"
+                    autocomplete="off"
+                />
+                <button id="apply-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    Search
+                </button>
+            </div>
+
+            <div id="responseMessage" class="message"></div>
+
+            <div class="table-container">
+                <table id="resources-table">
+                    <thead>
+                        <tr>
+                            <th>Resource Name</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resources-body">
+                        <!-- Dynamically populated rows -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/viewResource.js"></script>
+</body>
+</html>

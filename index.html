@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Allocation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+                background: linear-gradient(135deg, 
+                #0f1020, 
+                #1a1a2e, 
+                #16213e 
+            );
+            background-attachment: fixed;
+        }
+        .container {
+            background-color: rgb(236, 229, 229);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .title {
+            color: #3B82F6;
+            margin-bottom: 30px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn {
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .btn-add {
+            background-color: #3B82F6;
+        }
+        .btn-view {
+            background-color: #10B981;
+        }
+        .btn-find {
+            background-color: #6366F1;
+        }
+        .btn:hover::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: all 0.5s ease;
+            animation: shine 0.7s forwards;
+        }
+        @keyframes shine {
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Resource Allocation</h1>
+        <div class="btn-group">
+            <a href="addResourceForm.html" class="btn btn-add">Add Resource</a>
+            <a href="viewResources.html" class="btn btn-view">Find Resources by Skills</a>
+            <a href="viewResourceBySkillAndExperience.html" class="btn btn-find">Search Skills and Experience</a>
+        </div>
+    </div>
+</body>
+</html>

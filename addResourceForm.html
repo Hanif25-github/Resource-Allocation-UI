@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Request Form</title>
+    <link rel="stylesheet" href="./css/addResourceForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Resource Request Form</h1>
+            <p>Help us understand your resource needs</p>
+        </div>
+
+        <form id="resource-form" autocomplete="off">
+            <div class="form-group">
+                <label for="resourceName">Resource Name</label>
+                <input 
+                    type="text" 
+                    id="resourceName" 
+                    name="resourceName" 
+                    placeholder="Enter resource name" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Experience Level</label>
+                <input 
+                    type="number" 
+                    id="experience" 
+                    name="experience" 
+                    placeholder="Years of experience" 
+                    min="0" 
+                    max="50" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <input 
+                    type="text" 
+                    id="skills" 
+                    name="skills" 
+                    placeholder="Comma-separated skills (e.g. Java, SQL)" 
+                    required
+                >
+                <small class="hint">Separate multiple skills with commas</small>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Submit Request
+            </button>
+        </form>
+
+        <div id="responseMessage" class="response-message"></div>
+    </div>
+
+    <script src="./js/addResourceForm.js"></script>
+</body>
+</html>
