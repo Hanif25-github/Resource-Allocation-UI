@@ -1,5 +1,3 @@
-// viewResource.js
-
 document.addEventListener('DOMContentLoaded', function () {
     // Handle search button click
     document.getElementById('apply-search').addEventListener('click', function () {
