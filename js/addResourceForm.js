@@ -1,4 +1,3 @@
-// index.js
 
 document.getElementById('resource-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the form from submitting the default way
