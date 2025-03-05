@@ -1,4 +1,3 @@
-// viewResourceBySkillAndExperience.js
 
 document.addEventListener('DOMContentLoaded', function () {
     // Handle search button click
